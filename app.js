@@ -4,11 +4,7 @@ const app = express(); // first instance of the express
 
 app.set('view engine', 'ejs'); //tell express we will be using ejs view template engine
 
-app.get("/", (req, res) => {
-    res.send('Welcome to our Website to learn')
-})
-
-app.get("/home", (req, res)=>{
+app.get("/", (req, res)=>{
     res.render('index')
 })
 
